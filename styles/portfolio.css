@@ -11,7 +11,7 @@ h1 {
   line-height: 28px;
   letter-spacing: 0.1em;
   text-align: center;
-  position: relative;
+  position: absolute;
   width: 208px;
   height: 28px;
   left: calc(50% - 200px / 2);
@@ -26,12 +26,12 @@ h2 {
   letter-spacing: 0.1em;
   color: white;
   text-align: center;
-  position: relative;
+  position: absolute;
   text-transform: uppercase;
   width: 595px;
   height: 84px;
   left: calc(50% - 595px / 2 + 0.5px);
-  top: 300px;
+  top: 350px;
 }
 p {
   font-family: var(--heading-font-family);

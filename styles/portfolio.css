@@ -1,6 +1,7 @@
 :root {
   --heading-font-family: "Roboto", sans-serif;
 }
+
 h1 {
   font-family: var(--heading-font-family);
   font-style: normal;
@@ -47,17 +48,18 @@ p {
   left: calc(50% - 460px / 2);
   top: 438px;
 }
-.btn-branding {
-  display: flex;
+
+.btn {
+  display: block;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 18px 30px;
+
   position: absolute;
   width: 200px;
   height: 53px;
   left: calc(50% - 220px / 2);
-  top: 546px;
+  top: 586px;
   background: white;
   border-radius: 50px;
   padding: 15px 30px;
@@ -70,96 +72,57 @@ p {
 
 .hero-bg {
   position: absolute;
-  width: 1400px;
+  width: 100%;
+  max-width: 100%;
   height: 900px;
   left: 0px;
   top: 0px;
 }
-.row-1 {
+.row {
+  margin-top: 30px;
+}
+.gallery-img {
+  width: 98%;
+  height: 95%;
+}
+.gallery {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  position: absolute;
-  width: 1152px;
-  height: 280px;
-  left: 144px;
-  top: 1000px;
 }
-.photo-1 {
-  position: static;
-  width: 300px;
-  height: 280px;
-  left: 0px;
-  top: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 40px;
-}
-.photo-2 {
-  position: static;
-  width: 300px;
-  height: 280px;
-  left: 340px;
-  top: 0px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 40px;
-}
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 44px;
+    line-height: 2;
+  }
+  h1 {
+    top: 40px;
+  }
+  h2 {
+    top: 90px;
+  }
+  p {
+    top: 170px;
+    font-size: 14px;
+    text-align: center;
+  }
 
-.photo-3 {
-  width: 300px;
-  height: 280px;
-  left: 680px;
-  top: 0px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 0px 40px;
-}
-.row-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
+  .hero-bg {
+    max-width: 100%;
+    height: auto;
+  }
 
-  position: absolute;
-  width: 1152px;
-  height: 280px;
-  left: 144px;
-  top: 1320px;
-}
-.photo-4 {
-  position: static;
-  width: 300px;
-  height: 280px;
-  left: 0px;
-  top: 0px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 40px;
-}
-.photo-5 {
-  position: static;
-  width: 300px;
-  height: 280px;
-  left: 340px;
-  top: 0px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 40px;
-}
-.photo-6 {
-  width: 300px;
-  height: 280px;
-  left: 680px;
-  top: 0px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 0px 40px;
+  .header {
+    width: 50%;
+    display: inline-block;
+    max-width: 200px;
+    height: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -300px;
+  }
 }

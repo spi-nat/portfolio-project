@@ -126,3 +126,144 @@ p {
     margin-top: -300px;
   }
 }
+.about-section {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+}
+.about-section h1 {
+  position: absolute;
+  text-align: center;
+  left: calc(50% - 553px / 2 + 296.5px);
+  top: 100px;
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 65px;
+  /* identical to box height */
+  color: blue;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.about-section h2 {
+  position: absolute;
+  text-align: left;
+  left: calc(50% - 102px / 2 + 71px);
+  top: 59px;
+
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  color: blue;
+  letter-spacing: 0.1em;
+}
+.about-section .camera-link {
+  position: absolute;
+  text-align: left;
+  left: calc(50% - 102px / 2 + 71px);
+  top: 369px;
+
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  color: blue;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.about-section p {
+  position: absolute;
+  text-align: left;
+  width: 560px;
+  height: 90px;
+  left: calc(50% - 560px / 2 + 300px);
+  top: 231px;
+  color: blue;
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 167% */
+}
+.about-section .btn {
+  background: blue;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+
+  padding: 15px 30px;
+  display: flex;
+
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  justify-content: center;
+
+  left: 800px;
+  top: 400px;
+  position: absolute;
+
+  border-radius: 50px;
+}
+.about-section-content {
+  margin: 30px;
+}
+.about-section-content .img-fluid {
+  padding: 0 30px;
+}
+.about-row {
+  margin-top: 500px;
+}
+.about-row .gallery-img {
+  width: 98%;
+  height: 95%;
+  padding: 10px;
+}
+.about-row .gallery {
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .about-section h2 {
+    font-size: 12px;
+    top: 10px;
+  }
+  .about-section h1 {
+    top: 80px;
+    font-size: 25px;
+    line-height: normal;
+    text-align: left;
+  }
+  .about-section h2 {
+    top: 120px;
+  }
+  .about-section p {
+    top: 140px;
+    font-size: 12px;
+    max-width: 50%;
+  }
+
+  .about-section .camera-link {
+    top: 250px;
+    font-size: 15px;
+  }
+  .about-section .btn {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: -120px;
+  }
+}
